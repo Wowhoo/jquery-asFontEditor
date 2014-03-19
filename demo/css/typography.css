@@ -1,0 +1,247 @@
+.a-typography {
+  display: inline-block;
+}
+
+.a-typography-title {
+  display: block;
+  font-size: 14px;
+  color: #687175;
+}
+
+.a-typography-contnet {
+  padding: 20px;
+}
+
+.a-typography-trigger {
+  position: relative;
+  display: block;
+  padding: 15px 20px;
+  line-height: 26px;
+  border: 2px dashed #e5e5e5;
+}
+
+.a-typography-font {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  color: #9aa4a8;
+}
+
+.a-typography-font span {
+  float: left;
+  margin-right: 8px;
+  font-size: 40px;
+  color: #c7cfd2;
+}
+
+.a-typography-mask {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  display: none;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  line-height: 56px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+.a-typography-remove {
+  position: absolute;
+  top: -9px;
+  right: -11px;
+  display: none;
+  width: 15px;
+  height: 15px;
+  line-height: 12px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ff7975;
+  border: 2px solid #fff;
+  -webkit-border-radius: 100%;
+     -moz-border-radius: 100%;
+          border-radius: 100%;
+}
+
+.a-typography_hasFont {
+  border-style: solid;
+}
+
+.a-typography_hide {
+  display: none;
+}
+
+.a-typography_show {
+  display: block;
+}
+
+.a-typography-extend {
+  position: relative;
+  width: 310px;
+  padding: 30px 20px;
+  background-color: #f4f6f7;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.a-typography-close {
+  position: absolute;
+  top: -7px;
+  right: -9px;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ff7975;
+  border: 2px solid #fff;
+  -webkit-border-radius: 100%;
+     -moz-border-radius: 100%;
+          border-radius: 100%;
+}
+
+.a-typography-fontFamily,
+.a-typography-fontSize,
+.a-typography-lineHeight,
+.a-typography-fontWeight {
+  padding: 5px 0;
+  margin-bottom: 20px;
+}
+
+.a-typography-fontFamily:before,
+.a-typography-fontFamily:after,
+.a-typography-fontSize:before,
+.a-typography-fontSize:after,
+.a-typography-lineHeight:before,
+.a-typography-lineHeight:after,
+.a-typography-fontWeight:before,
+.a-typography-fontWeight:after {
+  display: table;
+  content: "";
+}
+
+.a-typography-fontFamily:after,
+.a-typography-fontSize:after,
+.a-typography-lineHeight:after,
+.a-typography-fontWeight:after {
+  clear: both;
+}
+
+.a-typography-fontFamily,
+.a-typography-fontSize,
+.a-typography-lineHeight,
+.a-typography-fontWeight {
+  *zoom: 1;
+}
+
+.a-typography-fontFamily-title,
+.a-typography-fontSize-title,
+.a-typography-lineHeight-title,
+.a-typography-fontWeight-title {
+  float: left;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #6e7a8a;
+}
+
+.a-typography-fontSize-title,
+.a-typography-lineHeight-title {
+  margin-top: 3px;
+}
+
+.a-typography-fontFamily-content,
+.a-typography-fontSize-content,
+.a-typography-lineHeight-content,
+.a-typography-fontWeight-content {
+  float: right;
+  width: 190px;
+}
+
+.a-typography-fontFamily-content ul,
+.a-typography-fontSize-content ul,
+.a-typography-lineHeight-content ul,
+.a-typography-fontWeight-content ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.a-typography-fontFamily-content:before,
+.a-typography-fontFamily-content:after,
+.a-typography-fontSize-content:before,
+.a-typography-fontSize-content:after,
+.a-typography-lineHeight-content:before,
+.a-typography-lineHeight-content:after,
+.a-typography-fontWeight-content:before,
+.a-typography-fontWeight-content:after {
+  display: table;
+  content: "";
+}
+
+.a-typography-fontFamily-content:after,
+.a-typography-fontSize-content:after,
+.a-typography-lineHeight-content:after,
+.a-typography-fontWeight-content:after {
+  clear: both;
+}
+
+.a-typography-fontFamily-content,
+.a-typography-fontSize-content,
+.a-typography-lineHeight-content,
+.a-typography-fontWeight-content {
+  *zoom: 1;
+}
+
+.a-typography-fontSize-value,
+.a-typography-lineHeight-value {
+  display: inline-block;
+  *display: inline;
+  width: 42px;
+  height: 22px;
+  padding: 0 5px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #bdbdbd;
+  text-align: center;
+  background-color: #fff;
+  border: 2px solid #dbddde;
+  *zoom: 1;
+}
+
+.a-typography-decorations {
+  display: block;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  list-style: none;
+}
+
+.a-typography-decorations li {
+  display: block;
+  float: left;
+  width: 15px;
+  height: 15px;
+  margin-left: 15px;
+  cursor: pointer;
+  background: url("../images/text-left.png") no-repeat center;
+}
+
+.a-typography-decorations li:hover {
+  background-image: url("../images/text-left_hover.png");
+}
+
+.a-typography-decorations li.a-typography_active {
+  background-image: url("../images/text-left_active.png");
+}
+
+.a-typography-decorations li:first-child {
+  margin-left: 0;
+}

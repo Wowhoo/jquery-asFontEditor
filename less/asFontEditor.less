@@ -1,0 +1,257 @@
+@namespace: asFontEditor;
+
+//================================
+
+.@{namespace} {
+    display: inline-block;
+}
+.@{namespace}-title {
+    display: block;
+    font-size: 14px;
+    color: #687175;
+}
+.@{namespace}-contnet {
+    padding: 20px;
+}
+
+.@{namespace}-trigger {
+    position: relative;
+    display: block;
+    line-height: 26px;
+    padding: 15px 20px;
+    border: 2px dashed #e5e5e5;
+    // text-align: center;
+}
+
+.@{namespace}-font {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #9aa4a8;
+    font-size: 14px;
+    span {
+        float: left;
+        margin-right: 8px;
+        font-size: 40px;
+        color: #c7cfd2;
+    }
+}
+
+.@{namespace}-mask {
+    display: none;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 16px;
+    line-height: 56px;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, .8);
+    cursor: pointer;
+}
+
+.@{namespace}-remove {
+    display: none;
+    position: absolute;
+    top: -9px;
+    right: -11px;
+    width: 15px;
+    height: 15px;
+    color: #fff;
+    line-height: 12px;
+    border: 2px solid #fff;
+    background-color: #ff7975;
+    text-decoration: none;
+    text-align: center;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+}
+
+
+
+
+//state 
+.@{namespace}_hasFont {
+    border-style: solid;
+}
+
+.@{namespace}_hide {
+    display: none;
+}
+.@{namespace}_show {
+    display: block;
+}
+
+// .@{namespace}_active {
+//     background-color: yellow !important;
+// }
+// .@{namespace}-typo_hide {
+//     display: none;
+// }
+
+//=========================
+.@{namespace}-extend {
+    position: relative;
+    width: 310px;
+    padding: 30px 20px;
+    background-color: #f4f6f7;
+    
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.@{namespace}-close {
+    position: absolute;
+    top: -7px;
+    right: -9px;
+    width: 15px;
+    height: 15px;
+    color: #fff;
+    line-height: 15px;
+    border: 2px solid #fff;
+    background-color: #ff7975;
+    text-decoration: none;
+    text-align: center;
+    
+    -webkit-border-radius: 100%;
+       -moz-border-radius: 100%;
+            border-radius: 100%;
+}
+
+.@{namespace}-fontFamily,
+.@{namespace}-fontSize,
+.@{namespace}-lineHeight,
+.@{namespace}-fontWeight {
+    padding: 5px 0;
+    margin-bottom: 20px;
+    // overflow: hidden;
+}
+//===============
+.@{namespace}-fontFamily:before,
+.@{namespace}-fontFamily:after,
+.@{namespace}-fontSize:before,
+.@{namespace}-fontSize:after,
+.@{namespace}-lineHeight:before,
+.@{namespace}-lineHeight:after,
+.@{namespace}-fontWeight:before,
+.@{namespace}-fontWeight:after {
+    display: table;
+    content: "";
+}
+.@{namespace}-fontFamily:after,
+.@{namespace}-fontSize:after,
+.@{namespace}-lineHeight:after,
+.@{namespace}-fontWeight:after {
+    clear: both;
+}
+
+.@{namespace}-fontFamily,
+.@{namespace}-fontSize,
+.@{namespace}-lineHeight,
+.@{namespace}-fontWeight {
+    *zoom: 1;
+}
+//=======================
+
+.@{namespace}-fontFamily-title,
+.@{namespace}-fontSize-title,
+.@{namespace}-lineHeight-title,
+.@{namespace}-fontWeight-title {
+    float: left;
+    margin-top: 8px;
+    color: #6e7a8a;
+    font-size: 12px;
+}
+.@{namespace}-fontSize-title,
+.@{namespace}-lineHeight-title {
+    margin-top: 3px;
+}
+
+.@{namespace}-fontFamily-content,
+.@{namespace}-fontSize-content,
+.@{namespace}-lineHeight-content,
+.@{namespace}-fontWeight-content {
+    float: right;
+    width: 190px;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+}
+//===
+.@{namespace}-fontFamily-content:before,
+.@{namespace}-fontFamily-content:after,
+.@{namespace}-fontSize-content:before,
+.@{namespace}-fontSize-content:after,
+.@{namespace}-lineHeight-content:before,
+.@{namespace}-lineHeight-content:after,
+.@{namespace}-fontWeight-content:before,
+.@{namespace}-fontWeight-content:after {
+    display: table;
+    content: "";
+}
+.@{namespace}-fontFamily-content:after,
+.@{namespace}-fontSize-content:after,
+.@{namespace}-lineHeight-content:after,
+.@{namespace}-fontWeight-content:after {
+    clear: both;
+}
+
+.@{namespace}-fontFamily-content,
+.@{namespace}-fontSize-content,
+.@{namespace}-lineHeight-content,
+.@{namespace}-fontWeight-content {
+    *zoom: 1;
+}
+//===
+
+.@{namespace}-fontSize-value,
+.@{namespace}-lineHeight-value {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 42px;
+    height: 22px;
+    padding: 0 5px;
+    color: #bdbdbd;
+    font-size: 12px;
+    line-height: 22px;
+    border: 2px solid #dbddde;
+    background-color: #fff;
+
+    text-align: center;
+}
+
+.@{namespace}-decorations {
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+    li {
+        float: left;
+        display: block;
+        width: 15px;
+        height: 15px;
+        margin-left: 15px;
+        // background-color: #ececec;
+        background: url("../images/text-left.png") no-repeat center;
+
+        cursor: pointer;
+        &:hover {
+            background-image: url("../images/text-left_hover.png");
+        }
+        &.@{namespace}_active {
+            background-image: url("../images/text-left_active.png");
+        }
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+}

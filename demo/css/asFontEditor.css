@@ -1,0 +1,247 @@
+.asFontEditor {
+  display: inline-block;
+}
+
+.asFontEditor-title {
+  display: block;
+  font-size: 14px;
+  color: #687175;
+}
+
+.asFontEditor-contnet {
+  padding: 20px;
+}
+
+.asFontEditor-trigger {
+  position: relative;
+  display: block;
+  padding: 15px 20px;
+  line-height: 26px;
+  border: 2px dashed #e5e5e5;
+}
+
+.asFontEditor-font {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  color: #9aa4a8;
+}
+
+.asFontEditor-font span {
+  float: left;
+  margin-right: 8px;
+  font-size: 40px;
+  color: #c7cfd2;
+}
+
+.asFontEditor-mask {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  display: none;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  line-height: 56px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+.asFontEditor-remove {
+  position: absolute;
+  top: -9px;
+  right: -11px;
+  display: none;
+  width: 15px;
+  height: 15px;
+  line-height: 12px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ff7975;
+  border: 2px solid #fff;
+  -webkit-border-radius: 100%;
+     -moz-border-radius: 100%;
+          border-radius: 100%;
+}
+
+.asFontEditor_hasFont {
+  border-style: solid;
+}
+
+.asFontEditor_hide {
+  display: none;
+}
+
+.asFontEditor_show {
+  display: block;
+}
+
+.asFontEditor-extend {
+  position: relative;
+  width: 310px;
+  padding: 30px 20px;
+  background-color: #f4f6f7;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.asFontEditor-close {
+  position: absolute;
+  top: -7px;
+  right: -9px;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ff7975;
+  border: 2px solid #fff;
+  -webkit-border-radius: 100%;
+     -moz-border-radius: 100%;
+          border-radius: 100%;
+}
+
+.asFontEditor-fontFamily,
+.asFontEditor-fontSize,
+.asFontEditor-lineHeight,
+.asFontEditor-fontWeight {
+  padding: 5px 0;
+  margin-bottom: 20px;
+}
+
+.asFontEditor-fontFamily:before,
+.asFontEditor-fontFamily:after,
+.asFontEditor-fontSize:before,
+.asFontEditor-fontSize:after,
+.asFontEditor-lineHeight:before,
+.asFontEditor-lineHeight:after,
+.asFontEditor-fontWeight:before,
+.asFontEditor-fontWeight:after {
+  display: table;
+  content: "";
+}
+
+.asFontEditor-fontFamily:after,
+.asFontEditor-fontSize:after,
+.asFontEditor-lineHeight:after,
+.asFontEditor-fontWeight:after {
+  clear: both;
+}
+
+.asFontEditor-fontFamily,
+.asFontEditor-fontSize,
+.asFontEditor-lineHeight,
+.asFontEditor-fontWeight {
+  *zoom: 1;
+}
+
+.asFontEditor-fontFamily-title,
+.asFontEditor-fontSize-title,
+.asFontEditor-lineHeight-title,
+.asFontEditor-fontWeight-title {
+  float: left;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #6e7a8a;
+}
+
+.asFontEditor-fontSize-title,
+.asFontEditor-lineHeight-title {
+  margin-top: 3px;
+}
+
+.asFontEditor-fontFamily-content,
+.asFontEditor-fontSize-content,
+.asFontEditor-lineHeight-content,
+.asFontEditor-fontWeight-content {
+  float: right;
+  width: 190px;
+}
+
+.asFontEditor-fontFamily-content ul,
+.asFontEditor-fontSize-content ul,
+.asFontEditor-lineHeight-content ul,
+.asFontEditor-fontWeight-content ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.asFontEditor-fontFamily-content:before,
+.asFontEditor-fontFamily-content:after,
+.asFontEditor-fontSize-content:before,
+.asFontEditor-fontSize-content:after,
+.asFontEditor-lineHeight-content:before,
+.asFontEditor-lineHeight-content:after,
+.asFontEditor-fontWeight-content:before,
+.asFontEditor-fontWeight-content:after {
+  display: table;
+  content: "";
+}
+
+.asFontEditor-fontFamily-content:after,
+.asFontEditor-fontSize-content:after,
+.asFontEditor-lineHeight-content:after,
+.asFontEditor-fontWeight-content:after {
+  clear: both;
+}
+
+.asFontEditor-fontFamily-content,
+.asFontEditor-fontSize-content,
+.asFontEditor-lineHeight-content,
+.asFontEditor-fontWeight-content {
+  *zoom: 1;
+}
+
+.asFontEditor-fontSize-value,
+.asFontEditor-lineHeight-value {
+  display: inline-block;
+  *display: inline;
+  width: 42px;
+  height: 22px;
+  padding: 0 5px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #bdbdbd;
+  text-align: center;
+  background-color: #fff;
+  border: 2px solid #dbddde;
+  *zoom: 1;
+}
+
+.asFontEditor-decorations {
+  display: block;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  list-style: none;
+}
+
+.asFontEditor-decorations li {
+  display: block;
+  float: left;
+  width: 15px;
+  height: 15px;
+  margin-left: 15px;
+  cursor: pointer;
+  background: url("../images/text-left.png") no-repeat center;
+}
+
+.asFontEditor-decorations li:hover {
+  background-image: url("../images/text-left_hover.png");
+}
+
+.asFontEditor-decorations li.asFontEditor_active {
+  background-image: url("../images/text-left_active.png");
+}
+
+.asFontEditor-decorations li:first-child {
+  margin-left: 0;
+}

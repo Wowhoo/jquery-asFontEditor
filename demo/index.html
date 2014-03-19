@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>jquery-title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+<!--         <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/prism.css">
+        <link rel="stylesheet" href="css/main.css">  -->
+        <link rel="stylesheet" href="css/dropdown.css">
+        <link rel="stylesheet" href="css/range.css">
+        <link rel="stylesheet" href="css/asFontEditor.css">
+
+
+        <script src="js/vendor/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-dropdown.js"></script>
+        <script type="text/javascript" src="js/jquery-range.js"></script>
+        <script src="../src/jquery-asFontEditor.js"></script>
+        <style type="text/css">
+            input {
+                width: 100%;
+            }
+        </style>
+    </head>
+<body>
+<!--[if lt IE 7]>
+    <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+<![endif]-->
+
+    <form action=""> 
+        <input type="text" class="ab-typography" value='{"font_family": "Arial","font_size": "30rem","line_height": "1.5em","font_weight": "bold","text_align": "left","font_style": "italy","text_transform": "capitalize","text_decoration": "underline"}' />
+    </form>
+
+
+        <!-- <ul class="a-typography">
+            <li class="a-typography-typo">
+                <span class="a-typography-typo-title">Title typography</span>
+                <div class="a-typography-typo-content">
+                    <div class="a-typography-typo-trigger a-typography-typo_hasFont">
+                        <div class="a-typography-typo-font"><span>T</span>Add typography</div>
+                        <div class="a-typography-typo-mask ">Extend</div>
+                    </div>
+                    <div class="a-typography-typo-extend">
+                        <a class="a-typography-typo-close" href="#">close</a>
+                        <div class="a-typography-typo-fontFamily">
+                            <span class="a-typography-typo-fontFamily-title">Typeface</span>
+                            <div class="a-typography-typo-fontFamily-content">
+                                <div class="a-typography-typo-fontFamily-dropdown"></div>
+                                <ul>
+                                    <li>inherit</li>
+                                    <li>Arial</li>
+                                    <li>Bpreplay</li>
+                                    <li>Cambira</li>
+                                    <li>Cambira</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="a-typography-typo-fontSize">
+                            <span class="a-typography-typo-fontSize-title">Font Size:</span>
+                            <div class="a-typography-typo-fontSize-content">
+                                <div class="a-typography-typo-fontSize-range"></div>
+                                <div class="a-typography-typo-fontSize-value">32<span>px</span></div>
+                            </div>
+                        </div>
+                        <div class="a-typography-typo-lineHeight">
+                            <span class="a-typography-typo-lineHeight-title">Font Size:</span>
+                            <div class="a-typography-typo-lineHeight-content">
+                                <div class="a-typography-typo-lineHeight-range"></div>
+                                <div class="a-typography-typo-lineHeight-value">18<span>px</span></div>
+                            </div>
+                        </div>
+                        <div class="a-typography-typo-fontWeight">
+                            <span class="a-typography-typo-fontWeight-title">Weight:</span>
+                            <div class="a-typography-typo-fontWeight-content">
+                                <div class="a-typography-typo-fontWeight-dropdown"></div>
+                                <ul>
+                                    <li>normal</li>
+                                    <li>bold</li>
+                                    <li>400</li>
+                                    <li>500</li>
+                                    <li>600</li>
+                                    <li>700</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <ul class="a-typography-typo-decorations">
+                            <li class="text-left isac"></li>
+                            <li class="text-center"></li>
+                            <li class="text-right"></li>
+                            <li class="text-italy"></li>
+                            <li class="text-uppercase is"></li>
+                            <li class="text-lowercase"></li>
+                            <li class="text-capitalize"></li>
+                            <li class="text-underline"></li>
+                            <li class="text-linethrough"></li>
+                        </ul>
+
+                        <ul class="a-typography-typo-decorations">
+                            <li class="text-left"></li>
+                            <li class="text-center"></li>
+                            <li class="text-right"></li>
+                        </ul>
+                        <div class="text-italy"></div>
+                        <ul>
+                            <li class="text-uppercase"></li>
+                            <li class="text-lowercase"></li>
+                            <li class="text-capitalize"></li>
+                        </ul>
+                        <ul>
+                            <li class="text-underline"></li>
+                            <li class="text-linethrough"></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="a-typography-bgColor">
+                <span class="option-title">Title Background color</span>
+                <div class="option-content">
+                    <input type="text">
+                </div>
+            </li>
+            <li class="a-typography-color">
+                <span class="option-title">Title Text color</span>
+                <div class="option-content">
+                    <input type="text">
+                </div>
+            </li>
+        </ul> -->
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.ab-typography').asFontEditor({
+                
+            });
+        });
+    </script>
+</body>
+</html>

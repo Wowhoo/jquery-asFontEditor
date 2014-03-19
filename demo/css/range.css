@@ -1,0 +1,135 @@
+.az-range {
+  position: relative;
+  display: inline-block;
+  width: 114px;
+  height: 12px;
+  margin-right: 20px;
+  cursor: pointer;
+  background-color: #eeeeee;
+}
+
+.az-range-pointer {
+  position: absolute;
+  top: -38%;
+  left: 60%;
+  z-index: 2;
+  width: 16px;
+  height: 16px;
+  margin-left: -8px;
+  background-color: #ffffff;
+  border: 2px solid #dddddd;
+}
+
+.az-range-tip {
+  display: none;
+}
+
+.az-range-view {
+  position: absolute;
+  width: 60%;
+  height: 12px;
+  overflow: hidden;
+  background-color: #5cafda;
+}
+
+.az-range-scale {
+  display: none;
+}
+
+.az-range_normal {
+  margin-bottom: 40px;
+}
+
+.az-range_normal .az-range-tip {
+  position: absolute;
+  top: -30px;
+  left: 3px;
+  display: block;
+  width: 36px;
+  height: 20px;
+  margin-left: -15px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #5d5c58;
+  border: 1px solid #5d5c58;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+
+.az-range_normal .az-range-tip:before {
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #5d5c58;
+  content: '';
+  -webkit-transform: rotate(-45deg);
+     -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.az-range_normal .az-range-scale {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  display: block;
+  width: 100%;
+}
+
+.az-range_normal .az-range-scale .az-range-scaleGrid,
+.az-range_normal .az-range-scale .az-range-scaleValue {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+  list-style: none;
+}
+
+.az-range_normal .az-range-scale .az-range-scaleGrid li,
+.az-range_normal .az-range-scale .az-range-scaleValue li {
+  position: absolute;
+  top: 0;
+  float: left;
+}
+
+.az-range_normal .az-range-scale .az-range-scaleGrid {
+  top: 8px;
+}
+
+.az-range_normal .az-range-scale .az-range-scaleGrid li {
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 5px;
+  background-color: #cfcdc7;
+}
+
+.az-range_normal .az-range-scale .az-range-scaleGrid .az-range-scale-grid {
+  height: 10px;
+  margin-top: -5px;
+}
+
+.az-range_normal .az-range-scale .az-range-scaleValue {
+  top: 15px;
+  margin-left: 1px;
+}
+
+.az-range_normal .az-range-scale .az-range-scaleValue li {
+  color: #cfcdc7;
+}
+
+.az-range_normal .az-range-scale .az-range-scaleValue li span {
+  *position: relative;
+  *display: inline;
+  margin-left: -50%;
+  color: #cfcdc7;
+  *zoom: 1;
+}
